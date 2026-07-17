@@ -1,0 +1,141 @@
+@import "tailwindcss";
+
+/* ─── BhoomiChain Design System ─── */
+/* Tailwind v4 uses CSS variables for custom tokens */
+@theme {
+  /* Surface Scale */
+  --color-surface:                    #f8f9fa;
+  --color-surface-lowest:             #ffffff;
+  --color-surface-low:                #f3f4f5;
+  --color-surface-container:          #edeeef;
+  --color-surface-high:               #e7e8e9;
+  --color-surface-highest:            #e1e3e4;
+  
+  --color-surface-container-lowest:   #ffffff;
+  --color-surface-container-low:      #f3f4f5;
+  --color-surface-container-high:     #e7e8e9;
+  --color-surface-container-highest:  #e1e3e4;
+  --color-on-surface:                 #191c1d;
+  --color-on-surface-variant:         #414844;
+  --color-outline:                    #717973;
+  --color-outline-variant:            #c1c8c2;
+
+  /* Primary — Deep Green */
+  --color-primary:               #012d1d;
+  --color-on-primary:            #ffffff;
+  --color-primary-container:     #1b4332;
+  --color-on-primary-container:  #86af99;
+  --color-primary-fixed:         #c1ecd4;
+  --color-primary-fixed-dim:     #a5d0b9;
+  --color-inverse-primary:       #a5d0b9;
+
+  /* Secondary — Earth Brown */
+  --color-secondary:             #6e5a4e;
+  --color-on-secondary:          #ffffff;
+  --color-secondary-container:   #f6dacb;
+  --color-on-secondary-container:#735e52;
+
+  /* Tertiary — Tech Blue */
+  --color-tertiary:              #002842;
+  --color-on-tertiary:           #ffffff;
+  --color-tertiary-container:    #003f63;
+  --color-on-tertiary-container: #59adef;
+  --color-tertiary-fixed:        #cde5ff;
+  --color-tertiary-fixed-dim:    #94ccff;
+
+  /* Error */
+  --color-error:                 #ba1a1a;
+  --color-on-error:              #ffffff;
+  --color-error-container:       #ffdad6;
+  --color-on-error-container:    #93000a;
+
+  /* Spacing */
+  --spacing-margin-desktop:      40px;
+  --spacing-margin-mobile:       16px;
+  --spacing-gutter:              24px;
+  --spacing-unit:                4px;
+  --spacing-container-max:       1280px;
+
+  /* Font Sizes */
+  --font-size-display-lg:        48px;
+  --font-size-headline-lg:       32px;
+  --font-size-headline-lg-mobile:24px;
+  --font-size-title-md:          20px;
+  --font-size-body-lg:           18px;
+  --font-size-body-md:           16px;
+  --font-size-label-md:          14px;
+  --font-size-label-sm:          12px;
+
+  /* Font Families */
+  --font-sans:                   'Public Sans', sans-serif;
+  --font-label:                  'Inter', sans-serif;
+  --font-mono:                   'JetBrains Mono', monospace;
+  
+  --font-body-lg:                'Public Sans', sans-serif;
+  --font-body-md:                'Public Sans', sans-serif;
+  --font-display-lg:             'Public Sans', sans-serif;
+  --font-headline-lg:            'Public Sans', sans-serif;
+  --font-headline-lg-mobile:     'Public Sans', sans-serif;
+  --font-title-md:               'Public Sans', sans-serif;
+  --font-label-md:               'Inter', sans-serif;
+  --font-label-sm:               'Inter', sans-serif;
+
+  /* Border Radius */
+  --radius-DEFAULT:              0.25rem;
+  --radius-lg:                   0.5rem;
+  --radius-xl:                   0.75rem;
+  --radius-full:                 9999px;
+
+  /* Shadows */
+  --shadow-card:                 0px 4px 20px rgba(27, 67, 50, 0.08);
+}
+
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    font-family: 'Public Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--color-surface);
+    color: var(--color-on-surface);
+    font-family: var(--font-sans);
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Custom Background Patterns */
+.land-grid-pattern {
+  background-image: radial-gradient(circle, #1b4332 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+}
+
+.text-gradient-primary {
+  background: linear-gradient(135deg, #012d1d 0%, #1b4332 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.canvas-shadow {
+  box-shadow: 0px 4px 20px rgba(27, 67, 50, 0.08);
+}
+
+.progress-hatched {
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(89, 173, 239, 0.2) 10px, rgba(89, 173, 239, 0.2) 20px);
+}
+
+.hatched-bg {
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(0, 63, 99, 0.05) 10px, rgba(0, 63, 99, 0.05) 20px);
+}
+

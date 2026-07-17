@@ -1,0 +1,93 @@
+{
+  "common": {
+    "connect_wallet": "Connect Wallet",
+    "disconnect": "Disconnect",
+    "loading": "Loading...",
+    "status": "Status",
+    "actions": "Actions",
+    "back": "Back",
+    "copied": "Copied!",
+    "apply": "Apply Changes"
+  },
+  "roles": {
+    "corporate": "Corporate Buyer",
+    "farmer": "Farmer",
+    "verifier": "Verifier",
+    "admin": "Administrator"
+  },
+  "landing": {
+    "badge": "Secured by Stellar & Soroban",
+    "hero_title": "India's Land Acquisition, Solved.",
+    "hero_subtitle": "A secure, transparent, direct-to-bank land aggregation framework built on the Stellar network. No middlemen, no title fraud, absolute legal integrity.",
+    "cta_start_deal": "Start Aggregation Deal",
+    "cta_join": "Join as Farmer/Verifier",
+    " mock_legally_attested": "Legally Attested",
+    "mock_live_asset": "LIVE ASSET — 42.5 Acres — Aggregation Threshold 85%",
+    "trust_title": "The Infrastructure of Trust",
+    "card_tokenized_title": "Tokenized Parcels",
+    "card_tokenized_desc": "Every parcel is represented as a secure, legally-audited digital token. Prevent double-selling and title tampering.",
+    "card_escrow_title": "Atomic Escrow",
+    "card_escrow_desc": "Buyer funds are held in automated smart contracts and released only when land aggregation thresholds are successfully met.",
+    "card_honesty_title": "Economic Honesty",
+    "card_honesty_desc": "Verifiers stake collateral and build reputation. Fraudulent attestations are slashed automatically via DAO consensus.",
+    "direct_payout_title": "Direct-to-Bank Settlement",
+    "direct_payout_bullet1": "Direct bank payouts triggered instantly upon smart contract execution.",
+    "direct_payout_bullet2": "Safe, compliance-checked transfers removing administrative overhead.",
+    "partner_title": "TRUSTED BY LEADING ENTERPRISES",
+    "footer_tag": "BhoomiChain. Secured by Stellar/Soroban.",
+    "footer_audit": "Smart Contract Audit"
+  },
+  "wallet": {
+    "why_connect": "WHY CONNECT?",
+    "bullet1": "On-Chain Identity: Connect to verify your role (Farmer, Verifier, or Corporate).",
+    "bullet2": "Secure Transactions: Authorize registrations, staking, and escrow releases securely.",
+    "install_freighter": "Freighter is not installed. Click here to install.",
+    "network_warning": "Warning: Connected to Mainnet. Please switch to Testnet.",
+    "secure_connect": "Securely connect with Soroban"
+  },
+  "farmer": {
+    "greeting": "Namaste, {{name}}.",
+    "assets_count": "Manage your {{count}} verified land assets.",
+    "registration_steps": {
+      "identity": "Identity Verification",
+      "deed": "Property Deed Submission",
+      "encumbrance": "Encumbrance Review",
+      "gis": "GIS Survey Map"
+    },
+    "documents": {
+      "title": "Property Verification Documents",
+      "deed_title": "Property Deed",
+      "identity_title": "Identity Proof",
+      "encumbrance_title": "Encumbrance Certificate",
+      "survey_title": "Survey Map (GIS)"
+    },
+    "payout": {
+      "title": "Institutional Land Registry Portal",
+      "status_live": "Aggregation Live",
+      "progress": "Payout Progress",
+      "estimated": "Estimated Payout",
+      "bank_linked": "Bank Linked via Stellar — SBI **** 8291",
+      "assurance": "BhoomiChain Assurance",
+      "bullet1": "Funds locked in Soroban escrow, guaranteed payout.",
+      "bullet2": "No deductions or intermediary commissions.",
+      "bullet3": "Automated dispute resolution via registry DAO."
+    }
+  },
+  "verifier": {
+    "workspace_title": "Verifier Workspace",
+    "total_staked": "Total Staked",
+    "titles_cleared": "Titles Cleared",
+    "reputation": "Reputation Score",
+    "warning": "Warning: Stake is subject to slashing if fraudulent clearances are reported.",
+    "pending_queue": "Pending Queue",
+    "stake_health": "Stake Health",
+    "gov_button": "Stellar Governance"
+  },
+  "corporate": {
+    "dashboard_title": "Corporate Deal Detail",
+    "progress_title": "Aggregation Progress",
+    "escrow_card": "Soroban Escrow",
+    "closing_timeline": "Closing Timeline",
+    "active_deals": "Active Aggregation Deals"
+  }
+}

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+      window.global = window;
+      window.process = { env: { NODE_ENV: 'development' } };
+    </script>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <title>BhoomiChain — Decentralized Land Aggregation & Escrow</title>
+    <script>
+      window.addEventListener('error', function(event) {
+        var root = document.getElementById('root');
+        if (root) {
+          root.innerHTML = '<div style="padding: 20px; background: #ffdad6; color: #93000a; font-family: monospace; border: 1px solid #ffb4ab; border-radius: 8px; margin: 20px; text-align: left;">' +
+            '<h2 style="margin-top: 0; color: #ba1a1a;">⚠️ Runtime Application Crash</h2>' +
+            '<p><strong>Message:</strong> ' + event.message + '</p>' +
+            '<p><strong>Source:</strong> ' + event.filename + ':' + event.lineno + ':' + event.colno + '</p>' +
+            '<p><strong>Stack Trace:</strong></p>' +
+            '<pre style="white-space: pre-wrap; word-break: break-all; background: rgba(0,0,0,0.05); padding: 10px; border-radius: 4px;">' + (event.error ? event.error.stack : 'No stack trace available') + '</pre>' +
+            '</div>';
+        }
+      });
+      window.addEventListener('unhandledrejection', function(event) {
+        var root = document.getElementById('root');
+        if (root) {
+          root.innerHTML = '<div style="padding: 20px; background: #ffdad6; color: #93000a; font-family: monospace; border: 1px solid #ffb4ab; border-radius: 8px; margin: 20px; text-align: left;">' +
+            '<h2 style="margin-top: 0; color: #ba1a1a;">⚠️ Unhandled Promise Rejection (Async Crash)</h2>' +
+            '<p><strong>Reason:</strong> ' + (event.reason ? (event.reason.message || event.reason) : 'No reason provided') + '</p>' +
+            '<p><strong>Stack Trace:</strong></p>' +
+            '<pre style="white-space: pre-wrap; word-break: break-all; background: rgba(0,0,0,0.05); padding: 10px; border-radius: 4px;">' + (event.reason && event.reason.stack ? event.reason.stack : 'No stack trace available') + '</pre>' +
+            '</div>';
+        }
+      });
+    </script>
+    <script type="module" crossorigin src="/assets/index-DTrx2i6-.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-erYTDKBU.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
