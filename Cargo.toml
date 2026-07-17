@@ -1,0 +1,17 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/bhoomi-math",
+    "contracts/verifier-registry",
+    "contracts/parcel-token",
+    "contracts/aggregation-deal",
+    "contracts/dispute-dao",
+]
+
+[profile.release]
+opt-level = "z"
+overflow-checks = true
+debug = false
+codegen-units = 1
+panic = "abort"
+lto = true
