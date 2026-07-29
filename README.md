@@ -32,75 +32,74 @@
 
 ## 📸 Screenshots
 
-### 🏠 Landing Page — Hero
-![Landing Page Hero](screenshots/01_hero.png)
-*India's Land Acquisition, Solved — with live on-chain asset bento grid*
+### 🖥️ Desktop
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="screenshots/01_hero.png" alt="Landing Hero"/><br/>
+      <sub><b>Landing Page — Hero</b><br/>India's Land Acquisition, Solved</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="screenshots/02_wallet_modal.png" alt="Wallet Modal"/><br/>
+      <sub><b>Wallet Connection Modal</b><br/>Freighter · xBull · Albedo · LOBSTR</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="screenshots/04_corporate_dashboard.png" alt="Corporate Dashboard"/><br/>
+      <sub><b>Corporate Dashboard</b><br/>Live map · 78% aggregation progress · Kurnool parcel K-203</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="screenshots/05_payout_portal.png" alt="Payout Portal"/><br/>
+      <sub><b>Farmer Payout Portal</b><br/>Phase 2 of 3 · ₹12,40,000 escrowed · SBI ****8291</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="screenshots/03_freighter.png" alt="Freighter"/><br/>
+      <sub><b>Freighter Wallet — Live Connection</b><br/>Real connection request from bhoomichain-lovat.vercel.app</sub>
+    </td>
+    <td align="center" width="50%"></td>
+  </tr>
+</table>
 
 ---
 
-### 🔐 Wallet Connection Modal
-![Wallet Modal](screenshots/02_wallet_modal.png)
-*Connect via Freighter, xBull, Albedo, or LOBSTR — built-in Stellar wallet guide*
+### 📱 Mobile Responsive
 
----
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <img src="screenshots/Screenshot_20260729_100839_Chrome.jpg" alt="Mobile Hero"/><br/>
+      <sub><b>Landing Hero</b><br/>Hero · CTAs · Bento grid</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="screenshots/Screenshot_20260729_100844_Chrome.jpg" alt="Mobile Features"/><br/>
+      <sub><b>Features & My Assets</b><br/>Feature cards · Transaction widget</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="screenshots/Screenshot_20260729_100851_Chrome.jpg" alt="Mobile Asset Cards"/><br/>
+      <sub><b>Asset Cards & Parcel Detail</b><br/>Tokenized parcels · Stats row</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="33%">
+      <img src="screenshots/Screenshot_20260729_100900_Chrome.jpg" alt="Mobile Farmer"/><br/>
+      <sub><b>Farmer Home Dashboard</b><br/>3 parcels · Quick actions · TX history</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="screenshots/Screenshot_20260729_100913_Chrome.jpg" alt="Mobile Verifier"/><br/>
+      <sub><b>Verifier Workspace</b><br/>50k XLM staked · Queue · Attest to Title</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="screenshots/Screenshot_20260729_100916_Chrome.jpg" alt="Mobile Stake Health"/><br/>
+      <sub><b>Stake Health & TX History</b><br/>85% confidence · 4.2% APY · Stellar hashes</sub>
+    </td>
+  </tr>
+</table>
 
-### 🦊 Freighter Extension — Live Connection
-![Freighter Connection](screenshots/03_freighter.png)
-*Real Freighter popup requesting access to bhoomichain-lovat.vercel.app*
 
----
-
-### 🗺️ Corporate Dashboard — Map & Aggregation Progress
-![Corporate Dashboard](screenshots/04_corporate_dashboard.png)
-*Live map showing parcel K-203 (Kurnool, 12.4 Acres) · 78% aggregation progress ring · 39.2/50 acres cleared*
-
----
-
-### 💰 Farmer Payout Portal — Escrow Tracker
-![Payout Portal](screenshots/05_payout_portal.png)
-*Phase 2 of 3 Active · ₹12,40,000 escrowed to SBI ****8291 · Simulate neighbor signature to advance threshold*
-
----
-
-## 📱 Mobile Responsive Screenshots
-
-> BhoomiChain is fully responsive — every screen works seamlessly on mobile devices.
-
-### 🏠 Mobile — Landing Hero
-![Mobile Landing Hero](screenshots/Screenshot_20260729_100839_Chrome.jpg)
-*Hero section on mobile: CTA buttons, blockchain bento grid, "Legally Attested" badge — all perfectly adapted for small screens*
-
----
-
-### 🌐 Mobile — Features & My Assets Section
-![Mobile Features and Assets](screenshots/Screenshot_20260729_100844_Chrome.jpg)
-*Horizontally scrollable feature cards, Direct-to-Bank transaction status widget, and the live "My Assets" parcel grid*
-
----
-
-### 🏡 Mobile — Asset Cards & Parcel Detail
-![Mobile Asset Cards](screenshots/Screenshot_20260729_100851_Chrome.jpg)
-*Tokenized parcel cards (Kurnool ✅, Nandyal ⏳, Anantapur ⚠️), live stats row, and the "Every Deed is a Digital Asset" section with on-chain parcel card*
-
----
-
-### 🧑‍🌾 Mobile — Farmer Home Dashboard
-![Mobile Farmer Dashboard](screenshots/Screenshot_20260729_100900_Chrome.jpg)
-*Farmer's personal dashboard: 3 parcels registered (1 verified, 1 pending), quick actions (Submit Docs, Payout Portal, Verifier Queue, Export PDF), and on-chain transaction history*
-
----
-
-### ⚖️ Mobile — Verifier Workspace
-![Mobile Verifier Workspace](screenshots/Screenshot_20260729_100913_Chrome.jpg)
-*Verifier portal: 50,000 XLM staked · 124 titles cleared · 98.4% reputation · Pending queue with Attested / Pending / Disputed parcels · Full document scan review with "Attest to Title" action*
-
----
-
-### 📊 Mobile — Verifier Stake Health & Transaction History
-![Mobile Verifier Stake Health](screenshots/Screenshot_20260729_100916_Chrome.jpg)
-*Stake health at 85% confidence · 50k XLM earning 4.2% APY in insurance pool · Recent transaction history showing Stellar tx hashes, fees earned, and verification outcomes*
-
----
 
 ## 🧭 What is BhoomiChain?
 
