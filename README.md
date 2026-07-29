@@ -62,6 +62,46 @@
 
 ---
 
+## 📱 Mobile Responsive Screenshots
+
+> BhoomiChain is fully responsive — every screen works seamlessly on mobile devices.
+
+### 🏠 Mobile — Landing Hero
+![Mobile Landing Hero](screenshots/Screenshot_20260729_100839_Chrome.jpg)
+*Hero section on mobile: CTA buttons, blockchain bento grid, "Legally Attested" badge — all perfectly adapted for small screens*
+
+---
+
+### 🌐 Mobile — Features & My Assets Section
+![Mobile Features and Assets](screenshots/Screenshot_20260729_100844_Chrome.jpg)
+*Horizontally scrollable feature cards, Direct-to-Bank transaction status widget, and the live "My Assets" parcel grid*
+
+---
+
+### 🏡 Mobile — Asset Cards & Parcel Detail
+![Mobile Asset Cards](screenshots/Screenshot_20260729_100851_Chrome.jpg)
+*Tokenized parcel cards (Kurnool ✅, Nandyal ⏳, Anantapur ⚠️), live stats row, and the "Every Deed is a Digital Asset" section with on-chain parcel card*
+
+---
+
+### 🧑‍🌾 Mobile — Farmer Home Dashboard
+![Mobile Farmer Dashboard](screenshots/Screenshot_20260729_100900_Chrome.jpg)
+*Farmer's personal dashboard: 3 parcels registered (1 verified, 1 pending), quick actions (Submit Docs, Payout Portal, Verifier Queue, Export PDF), and on-chain transaction history*
+
+---
+
+### ⚖️ Mobile — Verifier Workspace
+![Mobile Verifier Workspace](screenshots/Screenshot_20260729_100913_Chrome.jpg)
+*Verifier portal: 50,000 XLM staked · 124 titles cleared · 98.4% reputation · Pending queue with Attested / Pending / Disputed parcels · Full document scan review with "Attest to Title" action*
+
+---
+
+### 📊 Mobile — Verifier Stake Health & Transaction History
+![Mobile Verifier Stake Health](screenshots/Screenshot_20260729_100916_Chrome.jpg)
+*Stake health at 85% confidence · 50k XLM earning 4.2% APY in insurance pool · Recent transaction history showing Stellar tx hashes, fees earned, and verification outcomes*
+
+---
+
 ## 🧭 What is BhoomiChain?
 
 BhoomiChain solves one of India's most complex infrastructure problems: **large-scale land aggregation**. Acquiring hundreds of small agricultural plots from individual farmers for infrastructure projects (highways, solar farms, industrial corridors) typically takes **7+ years** of manual bureaucracy, disputed titles, and delayed payouts.
