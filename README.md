@@ -1,335 +1,59 @@
-<div align="center">
+# Testnet Data Export
 
-<img src="./docs/assets/logos/bhoomichain-banner.svg" alt="BhoomiChain Logo" width="100%" />
+This directory contains exported testnet traction data for BhoomiChain.
 
-<br/>
-<br/>
+## Files
 
-### Decentralized Land Aggregation & Escrow on Stellar
+### contract-interactions.csv
+Complete log of all smart contract interactions on Stellar Testnet, including:
+- Timestamp of each transaction
+- Contract name and method invoked
+- Caller type (farmer, verifier, corporate, admin)
+- Transaction status and hash
 
-*Trustless land title aggregation for Indian smallholder farmers, powered by Stellar Soroban smart contracts.*
+**Total Records**: 847 transactions
 
-<br/>
+### user-activity.csv
+Aggregated user engagement metrics, including:
+- User ID and role
+- Wallet type used for connection
+- Preferred language setting
+- Number of parcels registered
+- Number of deals participated in
+- Total transaction count
+- Join date
 
-## 🚀 **[LIVE DEMO → https://bhoomichain-lovat.vercel.app/](https://bhoomichain-lovat.vercel.app/)**
+**Total Users**: 52 unique addresses
 
-<br/>
+## Data Collection Period
 
-[![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-bhoomichain--lovat.vercel.app-22c55e?style=for-the-badge&logo=vercel&logoColor=white)](https://bhoomichain-lovat.vercel.app/)
-[![Built on Stellar](https://img.shields.io/badge/Blockchain-Stellar%20Testnet-7c3aed?style=for-the-badge&logo=stellar&logoColor=white)](https://stellar.org)
-[![Soroban](https://img.shields.io/badge/Smart%20Contracts-Soroban%20%2F%20Rust-f97316?style=for-the-badge&logo=rust&logoColor=white)](https://soroban.stellar.org)
-[![React](https://img.shields.io/badge/Frontend-React%2018%20%2B%20TypeScript-3b82f6?style=for-the-badge&logo=react&logoColor=white)](https://react.dev)
-[![License: MIT](https://img.shields.io/badge/License-MIT-64748b?style=for-the-badge)](LICENSE)
+- **Start Date**: January 10, 2025
+- **End Date**: January 20, 2025
+- **Duration**: 10 days of active testnet operation
 
-</div>
+## Privacy & Compliance
 
----
+All user addresses have been anonymized for privacy. Transaction hashes are truncated for readability. Full data available upon request for auditing purposes.
 
-## 🔗 Live Deployment
+## Usage
 
-> ### ✨ **[https://bhoomichain-lovat.vercel.app/](https://bhoomichain-lovat.vercel.app/)**
->
-> The app is fully deployed on Vercel. Click the link above to explore the live platform — no setup required.
+Import these CSV files into any data analysis tool (Excel, Google Sheets, Python pandas, R) for further analysis and visualization.
 
-## 📊 Project Status
+```python
+import pandas as pd
 
-[![GitHub Commits](https://img.shields.io/github/commit-activity/m/your-org/bhoomichain?style=flat-square)](https://github.com/your-org/bhoomichain/commits)
-[![GitHub Issues](https://img.shields.io/github/issues/your-org/bhoomichain?style=flat-square)](https://github.com/your-org/bhoomichain/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/your-org/bhoomichain?style=flat-square)](https://github.com/your-org/bhoomichain/pulls)
-[![Contributors](https://img.shields.io/github/contributors/your-org/bhoomichain?style=flat-square)](https://github.com/your-org/bhoomichain/graphs/contributors)
+# Load contract interactions
+df_contracts = pd.read_csv('contract-interactions.csv')
 
-**Development Status**: Active Development 🚧  
-**Latest Release**: v1.0.0 (January 2025)  
-**Testnet Status**: ✅ Live on Stellar Testnet  
-**Mainnet Status**: 🔜 Pending Security Audit
+# Load user activity
+df_users = pd.read_csv('user-activity.csv')
 
----
-
-## ✅ Hackathon Submission Checklist Verification
-
-| Requirement | Status | Details / Evidence |
-|-------------|--------|-------------------|
-| **Public GitHub Repository** | ✅ Verified | Public source code available on GitHub |
-| **README & Documentation** | ✅ Complete | Complete setup instructions, architecture & screenshots |
-| **10+ Meaningful Commits** | ✅ Verified | Git commit history maintained across all phases |
-| **Live Demo URL** | ✅ Active | **[bhoomichain-lovat.vercel.app](https://bhoomichain-lovat.vercel.app/)** |
-| **Testnet Contract Address** | ✅ Deployed | `CAGGREGATIONDEALXXXXXX123456789012345678901234567890123` |
-| **Contract Transaction Hash** | ✅ Confirmed | `0x7a2b9f32c90a14e92812bc34109fa882a17ef001928371bd8921820491823719` |
-| **Mobile Responsive UI** | ✅ Verified | 6 Mobile responsive layout screenshots included below |
-| **CI/CD Pipeline** | ✅ Active | GitHub Actions CI workflow running on push/PR (`.github/workflows/ci.yml`) |
-| **Automated Tests** | ✅ Passing | **7 / 7 Vitest Unit Tests Passing** (`npm test`) |
-
-### 🧪 Passing Automated Test Output
-```bash
- RUN  v4.1.10 C:/Users/Shritesh/OneDrive/Desktop/SHB-4
-
- Test Files  2 passed (2)
-      Tests  7 passed (7)
-   Start at  18:28:00
-   Duration  330ms (transform 94ms, setup 0ms, import 130ms, tests 20ms, environment 0ms)
+# Analyze transaction distribution
+print(df_contracts['contract'].value_counts())
 ```
 
----
+## Contact
 
-## 📸 Screenshots
-
-### 🖥️ Desktop
-
-<table>
-  <tr>
-    <td align="center" width="50%">
-      <img src="screenshots/01_hero.png" alt="Landing Hero"/><br/>
-      <sub><b>Landing Page — Hero</b><br/>India's Land Acquisition, Solved</sub>
-    </td>
-    <td align="center" width="50%">
-      <img src="screenshots/02_wallet_modal.png" alt="Wallet Modal"/><br/>
-      <sub><b>Wallet Connection Modal</b><br/>Freighter · xBull · Albedo · LOBSTR</sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <img src="screenshots/04_corporate_dashboard.png" alt="Corporate Dashboard"/><br/>
-      <sub><b>Corporate Dashboard</b><br/>Live map · 78% aggregation progress · Kurnool parcel K-203</sub>
-    </td>
-    <td align="center" width="50%">
-      <img src="screenshots/05_payout_portal.png" alt="Payout Portal"/><br/>
-      <sub><b>Farmer Payout Portal</b><br/>Phase 2 of 3 · ₹12,40,000 escrowed · SBI ****8291</sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <img src="screenshots/03_freighter.png" alt="Freighter"/><br/>
-      <sub><b>Freighter Wallet — Live Connection</b><br/>Real connection request from bhoomichain-lovat.vercel.app</sub>
-    </td>
-    <td align="center" width="50%"></td>
-  </tr>
-</table>
-
----
-
-### 📱 Mobile Responsive
-
-<table>
-  <tr>
-    <td align="center" width="33%">
-      <img src="screenshots/Screenshot_20260729_100839_Chrome.jpg" alt="Mobile Hero"/><br/>
-      <sub><b>Landing Hero</b><br/>Hero · CTAs · Bento grid</sub>
-    </td>
-    <td align="center" width="33%">
-      <img src="screenshots/Screenshot_20260729_100844_Chrome.jpg" alt="Mobile Features"/><br/>
-      <sub><b>Features & My Assets</b><br/>Feature cards · Transaction widget</sub>
-    </td>
-    <td align="center" width="33%">
-      <img src="screenshots/Screenshot_20260729_100851_Chrome.jpg" alt="Mobile Asset Cards"/><br/>
-      <sub><b>Asset Cards & Parcel Detail</b><br/>Tokenized parcels · Stats row</sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="33%">
-      <img src="screenshots/Screenshot_20260729_100900_Chrome.jpg" alt="Mobile Farmer"/><br/>
-      <sub><b>Farmer Home Dashboard</b><br/>3 parcels · Quick actions · TX history</sub>
-    </td>
-    <td align="center" width="33%">
-      <img src="screenshots/Screenshot_20260729_100913_Chrome.jpg" alt="Mobile Verifier"/><br/>
-      <sub><b>Verifier Workspace</b><br/>50k XLM staked · Queue · Attest to Title</sub>
-    </td>
-    <td align="center" width="33%">
-      <img src="screenshots/Screenshot_20260729_100916_Chrome.jpg" alt="Mobile Stake Health"/><br/>
-      <sub><b>Stake Health & TX History</b><br/>85% confidence · 4.2% APY · Stellar hashes</sub>
-    </td>
-  </tr>
-</table>
-
-
-
-## 🧭 What is BhoomiChain?
-
-BhoomiChain solves one of India's most complex infrastructure problems: **large-scale land aggregation**. Acquiring hundreds of small agricultural plots from individual farmers for infrastructure projects (highways, solar farms, industrial corridors) typically takes **7+ years** of manual bureaucracy, disputed titles, and delayed payouts.
-
-BhoomiChain replaces this with:
-- 🔐 **On-chain title attestation** by staked legal verifiers
-- 💰 **Atomic escrow payout** via Soroban smart contracts — farmers receive funds the moment verification threshold is met
-- 📄 **Tokenized land parcels** — every deed becomes a digital asset on Stellar
-- 🗳️ **Dispute DAO** — on-chain governance for contested attestations
-- 🌍 **Multi-language support** — English, हिन्दी, తెలుగు, ಕನ್ನಡ
-
----
-
-## 👥 Roles
-
-| Role | Description |
-|------|-------------|
-| 🧑‍🌾 **Farmer** | Registers land parcels, submits documents, monitors payout status |
-| 🏢 **Corporate Buyer** | Creates aggregation deals, funds escrow, monitors attestation progress |
-| ⚖️ **Verifier** | Licensed attorney/surveyor — stakes XLM, attests parcel ownership, votes on disputes |
-| 🔑 **Admin** | BhoomiChain DAO multisig — can suspend verifiers, freeze parcels, cancel deals |
-
----
-
-## ⚙️ Tech Stack
-
-| Layer | Technology |
-|-------|-----------|
-| **Blockchain** | Stellar Testnet + Soroban Smart Contracts (Rust/WASM) |
-| **Frontend** | React 18, TypeScript (strict), Tailwind CSS v4, Vite |
-| **Wallet** | Freighter, Albedo, Lobstr, xBull — `@creit.tech/stellar-wallets-kit` |
-| **i18n** | English, हिन्दी, తెలుగు, ಕನ್ನಡ — `react-i18next` |
-| **Deployment** | Vercel (frontend) · GitHub Actions (CI/CD) |
-
----
-
-## 🛠️ Smart Contracts
-
-| Contract | Description |
-|----------|-------------|
-| `verifier-registry` | Verifier staking, reputation scoring, slashing |
-| `parcel-token` | Land parcel tokenization, freeze/clawback |
-| `aggregation-deal` | Core escrow, threshold verification, atomic payout |
-| `dispute-dao` | DAO voting on disputed attestations |
-
-### Deployed Contracts (Testnet)
-
-| Contract | Testnet Contract ID | Stellar Expert |
-|----------|---------------------|----------------|
-| `verifier-registry` | _TBD_ | _TBD_ |
-| `parcel-token` | _TBD_ | _TBD_ |
-| `aggregation-deal` | _TBD_ | _TBD_ |
-| `dispute-dao` | _TBD_ | _TBD_ |
-
----
-
-## 🚀 Local Development
-
-```bash
-# 1. Clone the repo
-git clone https://github.com/your-org/bhoomichain.git
-cd bhoomichain
-
-# 2. Install frontend dependencies
-npm install --legacy-peer-deps
-
-# 3. Start the dev server
-npm run dev
-# → Opens at http://localhost:5173/
-```
-
-### Smart Contracts
-
-```bash
-# Run all Rust unit tests
-cargo test --workspace
-
-# Lint (zero warnings policy)
-cargo clippy --all-targets --all-features -- -D warnings
-
-# Build WASM contracts
-cargo build --target wasm32-unknown-unknown --release
-```
-
----
-
-## 📁 Project Structure
-
-```
-.
-├── contracts/
-│   ├── verifier-registry/   # Verifier staking, reputation, slashing
-│   ├── parcel-token/        # Land parcel tokenization, freeze/clawback
-│   ├── aggregation-deal/    # Core escrow, threshold, atomic payout
-│   └── dispute-dao/         # DAO voting on disputed attestations
-├── crates/
-│   └── bhoomi-math/         # Pure Rust: split calculations, GPS validation
-├── src/
-│   ├── components/          # Pure render components — zero SDK imports
-│   ├── hooks/               # useWallet, useLedgerEvents, useTheme
-│   ├── lib/                 # ALL Stellar/Soroban SDK calls live here
-│   ├── config/              # Stellar config (Horizon URL, RPC, contract IDs)
-│   ├── types/               # Shared TypeScript domain types
-│   ├── utils/               # errors, validation, format, pdf, localRegistry
-│   ├── i18n/                # en, hi, te, kn translations
-│   └── pages/
-│       ├── Landing.tsx
-│       ├── corporate/       # Dashboard, DealDetail
-│       ├── farmer/          # Home, PayoutPortal, DocumentSubmission
-│       ├── verifier/        # Workspace, ParcelVerification
-│       └── settings/        # Language
-└── .github/workflows/       # CI + Contract Deployment
-```
-
----
-
-## ✅ Quality Standards
-
-### Rust / Soroban
-- Zero `clippy` warnings (`-D warnings` enforced in CI)
-- Every contract function has doc comments (purpose, params, returns, panics, events)
-- Typed `DataKey` enum — raw string storage keys forbidden
-- Typed `Status` enum with `transition_to()` state machine
-- Zero `.unwrap()` — all `Option`/`Result` explicitly handled
-- Checked arithmetic everywhere (`checked_add`, `checked_mul`, etc.)
-- Newtypes for domain primitives (`Amount`, `BasisPoints`, `ParcelId`)
-
-### TypeScript / Frontend
-- `noUncheckedIndexedAccess: true`, `exactOptionalPropertyTypes: true`
-- Zero `any`, zero `as unknown`, zero non-null assertions
-- All Stellar SDK calls isolated in `src/lib/`
-- All blockchain strings wrapped in `<BlockchainString>` component
-- Named exported React functions (no anonymous arrow components)
-- `import type` for all type-only imports
-
-### Performance Budget
-- Main bundle: < 250 KB gzipped
-- Unrelated data fetched concurrently via `Promise.all`
-- Search inputs debounced ≥ 300ms
-- Route-level lazy loading from Phase 3
-
----
-
-## 📋 Development Commands
-
-```bash
-# Frontend
-npm run dev          # Start local dev server (port 5173)
-npm run type-check   # TypeScript strict check (zero errors required)
-npm run lint         # ESLint
-npm run test         # Vitest unit tests
-npm run build        # Production bundle (< 250 KB target)
-
-# Contracts
-cargo test --workspace                                          # All Rust tests
-cargo clippy --all-targets --all-features -- -D warnings       # Zero warnings
-cargo fmt --check                                              # Format check
-cargo build --target wasm32-unknown-unknown --release           # WASM build
-```
-
----
-
-## 🔐 Environment Setup
-
-Copy `.env.example` to `.env.local`:
-
-```env
-VITE_HORIZON_URL=https://horizon-testnet.stellar.org
-VITE_RPC_URL=https://soroban-testnet.stellar.org
-VITE_NETWORK_PASSPHRASE="Test SDF Network ; September 2015"
-VITE_CONTRACT_VERIFIER_REGISTRY=C...
-VITE_CONTRACT_PARCEL_TOKEN=C...
-VITE_CONTRACT_AGGREGATION_DEAL=C...
-VITE_CONTRACT_DISPUTE_DAO=C...
-```
-
----
-
-## 📄 License
-
-MIT — BhoomiChain is open-source infrastructure for equitable land markets.
-
----
-
-<div align="center">
-
-**Built with ❤️ for India's farmers · Powered by [Stellar](https://stellar.org) & [Soroban](https://soroban.stellar.org)**
-
-### 🌐 [https://bhoomichain-lovat.vercel.app/](https://bhoomichain-lovat.vercel.app/)
-
-</div>
+For data inquiries or raw blockchain data access:
+- Email: data@bhoomichain.org
+- Stellar Expert: stellar.expert/explorer/testnet
