@@ -1,6 +1,9 @@
 <div align="center">
 
-# 🌾 BhoomiChain
+<img src="./docs/assets/logos/bhoomichain-banner.svg" alt="BhoomiChain Logo" width="100%" />
+
+<br/>
+<br/>
 
 ### Decentralized Land Aggregation & Escrow on Stellar
 
@@ -27,6 +30,18 @@
 > ### ✨ **[https://bhoomichain-lovat.vercel.app/](https://bhoomichain-lovat.vercel.app/)**
 >
 > The app is fully deployed on Vercel. Click the link above to explore the live platform — no setup required.
+
+## 📊 Project Status
+
+[![GitHub Commits](https://img.shields.io/github/commit-activity/m/your-org/bhoomichain?style=flat-square)](https://github.com/your-org/bhoomichain/commits)
+[![GitHub Issues](https://img.shields.io/github/issues/your-org/bhoomichain?style=flat-square)](https://github.com/your-org/bhoomichain/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/your-org/bhoomichain?style=flat-square)](https://github.com/your-org/bhoomichain/pulls)
+[![Contributors](https://img.shields.io/github/contributors/your-org/bhoomichain?style=flat-square)](https://github.com/your-org/bhoomichain/graphs/contributors)
+
+**Development Status**: Active Development 🚧  
+**Latest Release**: v1.0.0 (January 2025)  
+**Testnet Status**: ✅ Live on Stellar Testnet  
+**Mainnet Status**: 🔜 Pending Security Audit
 
 ---
 
